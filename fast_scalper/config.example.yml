@@ -1,0 +1,21 @@
+exchange:
+  id: bybit
+  api_key: "YOUR_API_KEY"
+  secret: "YOUR_SECRET"
+  password: ""         # 某些交易所需要
+  testnet: true
+
+runtime:
+  poll_interval_ms: 250
+  reload_config_seconds: 5
+  max_retries: 3
+
+trade:
+  symbol: BTC/USDT:USDT
+  leverage: 5
+  capital_usdt: 50
+  fee_open: 0.00055
+  fee_close: 0.00055
+  slippage_buffer: 0.0003
+  min_notional_usdt: 10
+  independent_trade_id: "default"
